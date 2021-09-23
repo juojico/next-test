@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 import Container from '~/components/Container';
 import { wh, flex } from '~/styles/mixin';
 
@@ -18,9 +18,9 @@ const Header = () => {
     <HeaderWrapper>
       <Container>
         <HeaderArea>
-          <Link to='/'>Login</Link>
-          <Link to='/town'>Town</Link>
-          <Link to='/mrFund'>MrFund</Link>
+          <Link href='/'>Login</Link>
+          <Link href='/town'>Town</Link>
+          <Link href='/mrFund'>MrFund</Link>
         </HeaderArea>
       </Container>
     </HeaderWrapper>

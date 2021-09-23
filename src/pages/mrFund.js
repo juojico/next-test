@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Container from '~/components/Container';
 import { useStore } from '~/store';
 import { wh } from '~/styles/mixin';
@@ -20,7 +20,7 @@ const MrFund = () => {
       <Container>
         MrFund
         <button onClick={openDrawer}>openDrawer</button>
-        <Link to='/town'>
+        <Link href="/town">
           <button>backToTown</button>
         </Link>
       </Container>
